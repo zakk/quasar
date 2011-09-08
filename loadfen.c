@@ -67,6 +67,10 @@ short check_pieces(struct board_t *brd)
     if((brd->pcs[WHITE][PAWN]|brd->pcs[BLACK][PAWN])&(rankbits[0]|rankbits[7]))
 	return FALSE;
 
+    /*
+        Controllare anche brd->ep
+    */
+
     return TRUE;
 }
 
